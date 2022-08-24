@@ -1,5 +1,5 @@
-=== Twenty Twenty-Two ===
-Contributors: wordpressdotorg
+=== Atareao 23 ===
+Contributors: atareao.es
 Requires at least: 5.9
 Tested up to: 6.0
 Requires PHP: 5.6
@@ -17,23 +17,14 @@ Whether you’re building a single-page website, a blog, a business website, or 
 
 == Changelog ==
 
-= 1.2 =
+= 1.0 =
 * Released: May 24, 2022
 
 https://wordpress.org/support/article/twenty-twenty-two-changelog#Version_1.2
 
-= 1.1 =
-* Released: February 22, 2022
-
-https://wordpress.org/support/article/twenty-twenty-two-changelog#Version_1.1
-
-= 1.0 =
-* Released: January 25, 2022
-
-https://wordpress.org/support/article/twenty-twenty-two-changelog#Version_1.0
-
 == Copyright ==
 
+Atareao 23 Theme, 2022 atareao.es
 Twenty Twenty-Two WordPress Theme, 2021-2022 WordPress.org
 Twenty Twenty-Two is distributed under the terms of the GNU GPL.
 
