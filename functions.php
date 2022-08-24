@@ -66,4 +66,4 @@ add_action( 'wp_enqueue_scripts', 'twentytwentytwo_styles' );
 // Add block patterns
 require get_template_directory() . '/inc/block-patterns.php';
 // Add custom post types
-require get_template_directory() . '/inc/custom-post-types';
+require get_template_directory() . '/inc/custom-post-types.php';
