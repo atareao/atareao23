@@ -35,8 +35,6 @@ body {
  */
 
 a {
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.25ch;
     text-decoration: none;
 }
 
@@ -52,8 +50,8 @@ a:active {
 
 .wp-block-navigation .wp-block-navigation-item a:hover,
 .wp-block-navigation .wp-block-navigation-item a:focus {
-    text-decoration: underline;
-    text-decoration-style: solid;
+    text-decoration: none;
+    background-color: var(--wp--preset--color--primary);
 }
 
 /*

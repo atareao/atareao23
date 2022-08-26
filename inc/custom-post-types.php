@@ -110,9 +110,35 @@ function crear_y_registrar_cpts(){
         'public'        => true,
         'has_archive'   => true,
         'rewrite'       => array('slug' => 'pyldoras'),
-        'menu_icon'     => 'dashicons-star-half',
+        'menu_icon'     => 'dashicons-image-filter',
         'show_in_rest'  => true,
         'rest_base'     => 'pyldoras',
+        'supports'      => array('editor', 'title', 'author', 'thumbnail', 'comments', 'custom-fields', 'author'),
+        'taxonomies'    => array()));
+    /*
+     * Crates
+     */
+    register_post_type('crate', array(
+        'label'         => __('Crate'),
+        'labels'        => array(
+                'name'              => __('Crates'),
+                'singular_name'     => __('Crate'),
+                'add_new'           => __('Nuevo crate'),
+                'add_new_item'      => __('Nuevo crate'),
+                'edit_item'         => __('Editar crate'),
+                'new_item'          => __('Nuevo crate'),
+                'view_item'         => __('Ver crate'),
+                'view_items'        => __('Ver crates'),
+                'all_items'         => __('Listar crates'),
+                'menu_name'         => __('Crates'),
+                'name_admin_bar'    => __('Crates')),
+        'hierarchical'  => false,
+        'public'        => true,
+        'has_archive'   => true,
+        'rewrite'       => array('slug' => 'crates'),
+        'menu_icon'     => 'dashicons-pets',
+        'show_in_rest'  => true,
+        'rest_base'     => 'crates',
         'supports'      => array('editor', 'title', 'author', 'thumbnail', 'comments', 'custom-fields', 'author'),
         'taxonomies'    => array()));
 }
@@ -128,7 +154,7 @@ add_action('pre_get_posts', 'cpts_post_series_pre_posts');
 function cpts_post_series_pre_posts($query){
     if (!is_admin()&&(is_home() && $query->is_main_query())||is_feed()){
         $query->set('post_type',
-            array('post', 'tutorial', 'capitulo', 'podcast', 'pyldora'));
+            array('post', 'tutorial', 'capitulo', 'podcast', 'pyldora', 'crate'));
     }
 }
 // Add Custom post type menu
