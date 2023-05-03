@@ -3,7 +3,7 @@
 
 @mixin break-small-only() {
 
-	@media (max-width: #{ ($break-small - 1) }) {
-		@content;
-	}
+    @media (max-width: #{ ($break-small - 1) }) {
+        @content;
+    }
 }
