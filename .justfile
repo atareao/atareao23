@@ -1,2 +1,2 @@
 deploy:
-    ansible-playbook -i co1, playbook.yml
+    ansible-playbook -i co1, .playbook.yml
