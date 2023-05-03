@@ -1,9 +1,9 @@
 <?php
-if ( ! function_exists( 'blockbase_support' ) ) :
-    function blockbase_support() {
+if ( ! function_exists( 'atareao23_support' ) ) :
+    function atareao23_support() {
         // Make theme available for translation.
-        load_theme_textdomain( 'blockbase' );
-        if ( ! 'blockbase' === wp_get_theme()->get( 'TextDomain' ) ) {
+        load_theme_textdomain( 'atareao23' );
+        if ( ! 'atareao23' === wp_get_theme()->get( 'TextDomain' ) ) {
             load_theme_textdomain( wp_get_theme()->get( 'TextDomain' ) );
         }
 
@@ -37,8 +37,8 @@ if ( ! function_exists( 'blockbase_support' ) ) :
         if ( defined( 'IS_GUTENBERG_PLUGIN' ) ) {
             register_nav_menus(
                 array(
-                    'primary' => __( 'Primary Navigation', 'blockbase' ),
-                    'social'  => __( 'Social Navigation', 'blockbase' ),
+                    'primary' => __( 'Primary Navigation', 'atareao23' ),
+                    'social'  => __( 'Social Navigation', 'atareao23' ),
                 )
             );
         }
@@ -64,13 +64,13 @@ if ( ! function_exists( 'blockbase_support' ) ) :
 
     }
 endif;
-add_action( 'after_setup_theme', 'blockbase_support', 9 );
+add_action( 'after_setup_theme', 'atareao23_support', 9 );
 
 /**
  *
  * Enqueue scripts and styles.
  */
-function blockbase_editor_styles() {
+function atareao23_editor_styles() {
     // Add the child theme CSS if it exists.
     if ( file_exists( get_stylesheet_directory() . '/assets/theme.css' ) ) {
         add_editor_style(
@@ -78,21 +78,21 @@ function blockbase_editor_styles() {
         );
     }
 }
-add_action( 'admin_init', 'blockbase_editor_styles' );
+add_action( 'admin_init', 'atareao23_editor_styles' );
 
 /**
  *
  * Enqueue scripts and styles.
  */
-function blockbase_scripts() {
-    wp_enqueue_style( 'blockbase-ponyfill', get_template_directory_uri() . '/assets/ponyfill.css', array(), wp_get_theme()->get( 'Version' ) );
+function atareao23_scripts() {
+    wp_enqueue_style( 'atareao23-ponyfill', get_template_directory_uri() . '/assets/ponyfill.css', array(), wp_get_theme()->get( 'Version' ) );
 
     // Add the child theme CSS if it exists.
     if ( file_exists( get_stylesheet_directory() . '/assets/theme.css' ) ) {
-        wp_enqueue_style( 'blockbase-child-styles', get_stylesheet_directory_uri() . '/assets/theme.css', array( 'blockbase-ponyfill' ), wp_get_theme()->get( 'Version' ) );
+        wp_enqueue_style( 'atareao23-child-styles', get_stylesheet_directory_uri() . '/assets/theme.css', array( 'atareao23-ponyfill' ), wp_get_theme()->get( 'Version' ) );
     }
 }
-add_action( 'wp_enqueue_scripts', 'blockbase_scripts' );
+add_action( 'wp_enqueue_scripts', 'atareao23_scripts' );
 
 /**
  * Customize Global Styles
