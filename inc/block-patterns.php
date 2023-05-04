@@ -26,6 +26,9 @@ if ( ! function_exists( 'atareao23_register_block_patterns' ) ) :
                 'footer-simple',
                 'footer-small',
                 'footer-with-site-title',
+                'query-overlay',
+                'el-entry-meta',
+                'el-entry-overlay',
             );
 
             foreach ( $block_patterns as $block_pattern ) {
