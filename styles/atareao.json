@@ -1,0 +1,36 @@
+{
+    "version": 2,
+    "title": "Atareao",
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#181a1b",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#FBE6AA",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "foreground",
+                    "color": "#FFFFFF",
+                    "name": "Foreground"
+                },
+                {
+                    "slug": "background",
+                    "color": "#1c1e1f",
+                    "name": "Background"
+                },
+                {
+                    "slug": "tertiary",
+                    "color": "#364043",
+                    "name": "Tertiary"
+                }
+            ]
+        }
+    }
+}
+    
