@@ -16,7 +16,7 @@ return array(
     
     <!-- wp:group {"style":{"spacing":{"padding":{"bottom":"20px"}}},"layout":{"type":"flex","justifyContent":"space-between"}} -->
     <div class="wp-block-group" style="padding-bottom:20px"><!-- wp:paragraph {"fontSize":"small"} -->
-    <p class="has-small-font-size"><meta charset="utf-8"><strong>Proudly Powered by <a rel="nofollow" href="https://wordpress.org">WordPress</a></strong></p>
+    <p class="has-small-font-size"><meta charset="utf-8"><strong>Implemented by <a rel="nofollow" href="https://atareao.es">atareao</a></strong></p>
     <!-- /wp:paragraph -->
     
     <!-- wp:navigation {"itemsJustification":"center","overlayMenu":"never","className":"social-links"} /--></div>
