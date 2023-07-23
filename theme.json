@@ -240,7 +240,7 @@
                 }
             },
             "layout": {
-                "contentSize": "620px"
+                "contentSize": "1200px"
             },
             "gap": {
                 "baseline": "15px",
@@ -329,7 +329,7 @@
             }
         },
         "layout": {
-            "contentSize": "620px",
+            "contentSize": "1200px",
             "wideSize": "1000px"
         },
         "spacing": {
